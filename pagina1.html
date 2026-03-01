@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARSADM IPTV | Lista IPTV</title>
+
+<style>
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid #00f0ff;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #00f0ff;
+    text-shadow: 0 0 15px #00f0ff;
+}
+
+.header p {
+    margin-top: 10px;
+    color: #ff00ff;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+/* Cards */
+.blog-post {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00f0ff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.8);
+}
+
+.blog-post h2 {
+    color: #ff00ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Lista */
+.iptv-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.iptv-list li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.iptv-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #00f0ff;
+}
+
+/* Botões links */
+.plano-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+
+    text-align: center;
+    text-decoration: none;
+
+    background: linear-gradient(90deg, #00f0ff, #ff00ff);
+    border-radius: 25px;
+
+    color: black;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.plano-btn:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: 2px solid #ff00ff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+    <h1>ARSADM IPTV</h1>
+    <p>Lista premium • Qualidade 4K • Atualizações diárias</p>
+</header>
+
+<section style="text-align:center; padding:50px 20px; max-width:900px; margin:auto;">
+    <h2 style="color:#00f0ff; margin-bottom:20px;">Contas Gratuitas de Teste</h2>
+
+    <p style="color:#ddd; line-height:1.8; font-size:1.1rem;">
+        A ARSADM IPTV disponibiliza contas gratuitas de teste para que novos utilizadores possam experimentar a qualidade do nosso serviço antes de adquirir qualquer plano pago. As contas de teste são limitadas e podem estar disponíveis por um período determinado, sendo utilizadas apenas para avaliação da estabilidade, qualidade de imagem e funcionamento geral da plataforma.
+        <br><br>
+        Ao contactar o suporte da ARSADM IPTV, você poderá solicitar acesso a uma conta de teste gratuita, caso existam vagas disponíveis no momento. O objetivo destas contas é permitir que o cliente conheça a experiência real do serviço, verificando a fluidez dos canais, qualidade dos filmes e séries e a estabilidade dos servidores.
+        <br><br>
+        Recomendamos que os utilizadores utilizem as contas de teste de forma responsável e apenas para avaliação pessoal. Caso esteja satisfeito com a experiência, poderá escolher um dos nossos planos premium para continuar a usufruir de um serviço com maior estabilidade, maior quantidade de conteúdos e suporte contínuo.
+        <br><br>
+        A ARSADM IPTV trabalha constantemente para oferecer a melhor experiência de entretenimento digital, com atualizações frequentes, suporte dedicado e tecnologia otimizada para transmissão de conteúdo em alta qualidade.
+    </p>
+</section>
+
+<main class="container">
+
+<section class="blog-post">
+<h2>Plano Básico</h2>
+
+<ul class="iptv-list">
+<li>+5.000 canais</li>
+<li>Filmes e Séries</li>
+<li>Suporte 24h</li>
+<li>Qualidade HD</li>
+</ul>
+
+<a href="basico.html" class="plano-btn">Assinar Agora</a>
+
+</section>
+
+<section class="blog-post">
+<h2>Plano Premium</h2>
+
+<ul class="iptv-list">
+<li>+12.000 canais</li>
+<li>Filmes, Séries e Esportes</li>
+<li>Canais 4K</li>
+<li>Sem travamentos</li>
+</ul>
+
+<a href="premium.html" class="plano-btn">Assinar Agora</a>
+
+</section>
+
+<section class="blog-post">
+<h2>Plano Ultra</h2>
+
+<ul class="iptv-list">
+<li>+20.000 canais</li>
+<li>Conteúdo internacional</li>
+<li>Eventos ao vivo</li>
+<li>Qualidade 4K e 8K</li>
+</ul>
+
+<a href="ultra.html" class="plano-btn">Assinar Agora</a>
+
+</section>
+
+</main>
+
+<footer class="footer">
+<p>© 2026 ARSADM IPTV • Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

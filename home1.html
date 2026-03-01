@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARSADM IPTV | Entretenimento Premium</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#0b1220;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:bold;
+color:#00f0ff;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#ccc;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00f0ff;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+url("https://www.itcore.co.mz/assets/images/structure/solucoes-iptv.jpg");
+background-size:cover;
+background-position:center;
+padding:0 20px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:20px;
+color:#00f0ff;
+}
+
+.hero p{
+max-width:700px;
+color:#ccc;
+font-size:1.2rem;
+margin-bottom:30px;
+}
+
+.btn{
+padding:15px 35px;
+background:linear-gradient(90deg,#00f0ff,#ff00ff);
+border-radius:30px;
+font-weight:bold;
+text-decoration:none;
+color:#000;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+/* SECTION */
+.section{
+padding:100px 60px;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:60px;
+color:#ff00ff;
+font-size:2rem;
+}
+
+.cards{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+width:300px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#243047;
+}
+
+.card h3{
+color:#00f0ff;
+margin-bottom:15px;
+}
+
+/* TESTIMONIAL */
+.testimonial{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+width:280px;
+}
+
+/* CTA */
+.cta{
+background:linear-gradient(135deg,#302b63,#24243e);
+text-align:center;
+padding:80px 20px;
+}
+
+/* FOOTER */
+footer{
+background:#0b1220;
+padding:40px 60px;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+.footer-col{
+margin-bottom:20px;
+}
+
+.footer-col h4{
+margin-bottom:15px;
+color:#00f0ff;
+}
+
+.footer-col a{
+display:block;
+color:#ccc;
+text-decoration:none;
+margin-bottom:8px;
+}
+
+.footer-col a:hover{
+color:#00f0ff;
+}
+
+.copyright{
+text-align:center;
+padding:20px;
+background:#080d17;
+color:#777;
+}
+
+/* MODALS */
+.modal-overlay,
+.privacidade-overlay,
+.termos-overlay,
+.contato-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.85);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:2000;
+}
+
+.modal-box,
+.privacidade-box,
+.termos-box,
+.contato-box{
+background:#0f172a;
+padding:40px;
+border-radius:20px;
+width:90%;
+max-width:800px;
+max-height:85vh;
+overflow-y:auto;
+box-shadow:0 20px 50px rgba(0,0,0,0.6);
+animation:fadeIn 0.4s ease;
+}
+
+.modal-box h2,
+.privacidade-box h2,
+.termos-box h2,
+.contato-box h2{
+color:#00f0ff;
+margin-bottom:20px;
+text-align:center;
+}
+
+.modal-box p,
+.privacidade-box p,
+.termos-box p,
+.contato-box p{
+color:#ccc;
+line-height:1.8;
+margin-bottom:15px;
+}
+
+.close-btn,
+.close-priv,
+.close-termos,
+.close-contact{
+float:right;
+font-size:28px;
+cursor:pointer;
+color:#ff00ff;
+}
+
+.contact-btn{
+display:block;
+margin:12px 0;
+padding:14px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.whatsapp-btn{
+background:#25D366;
+color:white;
+text-align: center;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{transform:scale(0.7);opacity:0;}
+to{transform:scale(1);opacity:1;}
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+header{
+flex-direction:column;
+gap:15px;
+}
+
+.section{
+padding:80px 20px;
+}
+
+footer{
+flex-direction:column;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">ARSADM IPTV</div>
+
+<nav>
+<a href="home1.html">Home</a>
+<a href="pagina1.html">Planos</a>
+<a href="app1.html">Apps</a>
+<a href="#" onclick="abrirSobre()">Sobre Nós</a>
+<a href="#" onclick="abrirPolitica()">Privacidade</a>
+<a href="#" onclick="abrirTermos()">Termos</a>
+<a href="#" onclick="abrirContato()">Contato</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>IPTV Premium com Alta Estabilidade</h1>
+<p>Desfrute de milhares de canais, filmes e séries com qualidade HD, 4K e 8K.</p>
+<a href="#" class="btn">Assinar Agora</a>
+</section>
+
+<section class="section">
+<h2>Nossos Serviços</h2>
+
+<div class="cards">
+<div class="card">
+<h3>+20.000 Canais</h3>
+<p>Conteúdo atualizado diariamente.</p>
+</div>
+
+<div class="card">
+<h3>Eventos Ao Vivo</h3>
+<p>Futebol, UFC e esportes premium.</p>
+</div>
+
+<div class="card">
+<h3>Filmes e Séries</h3>
+<p>Biblioteca sob demanda.</p>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<h2>Pronto para assistir sem travamentos?</h2>
+<br>
+<a href="#" class="btn">Começar Agora</a>
+</section>
+
+<div class="copyright">
+© 2026 ARSADM IPTV
+</div>
+
+<!-- MODALS -->
+
+<div class="modal-overlay" id="sobreModal">
+<div class="modal-box">
+<span class="close-btn" onclick="fecharSobre()">×</span>
+<h2>⭐ Sobre Nós — ARSADM IPTV</h2>
+<p>A ARSADM IPTV é uma plataforma moderna de entretenimento digital, dedicada a oferecer uma experiência de streaming de alta qualidade, estável e acessível. Trabalhamos continuamente para disponibilizar conteúdos atualizados, com tecnologia otimizada para garantir transmissão fluida em múltiplos dispositivos. Nosso compromisso é com a inovação, segurança e satisfação do cliente, proporcionando acesso a canais, filmes e séries com qualidade superior e suporte dedicado 24 horas por dia. Buscamos sempre aprimorar nossos serviços para oferecer uma experiência premium e confiável para todos os nossos usuários.</p>
+</div>
+</div>
+
+<div class="privacidade-overlay" id="privModal">
+<div class="privacidade-box">
+<span class="close-priv" onclick="fecharPolitica()">×</span>
+<h2>🔒 Política de Privacidade</h2>
+<p>A ARSADM IPTV respeita a privacidade e a segurança das informações dos seus usuários. Coletamos apenas dados essenciais para melhorar a experiência do serviço, suporte técnico e otimização da plataforma. Não compartilhamos informações pessoais com terceiros sem consentimento, exceto quando exigido por lei. Implementamos medidas de segurança modernas para proteger dados e credenciais de acesso. Ao utilizar nossos serviços, o usuário concorda com o uso responsável das informações conforme descrito em nossa política de privacidade, garantindo transparência e confiança em nossa plataforma.</p>
+</div>
+</div>
+
+<div class="termos-overlay" id="termosModal">
+<div class="termos-box">
+<span class="close-termos" onclick="fecharTermos()">×</span>
+<h2>📜 Termos de Uso</h2>
+<p>utilizar a ARSADM IPTV, o usuário concorda em utilizar o serviço apenas para fins pessoais e de entretenimento. É proibido compartilhar credenciais, redistribuir conteúdo ou utilizar o serviço de forma indevida. A plataforma pode realizar atualizações, manutenção ou alterações nos serviços a qualquer momento para melhorar desempenho e segurança. Não nos responsabilizamos por problemas decorrentes de má configuração de dispositivos, conexão de internet instável ou uso inadequado do serviço. O usuário é responsável pela segurança das suas informações de acesso e pelo cumprimento das regras de uso da plataforma.</p>
+</div>
+</div>
+
+<div class="contato-overlay" id="contatoModal">
+<div class="contato-box">
+<span class="close-contact" onclick="fecharContato()">×</span>
+<h2>📞 Contacto — ARSADM IPTV</h2>
+
+<p>A ARSADM IPTV disponibiliza diversos canais de comunicação para garantir um atendimento rápido, eficiente e profissional aos nossos clientes. Nossa equipa de suporte está disponível para auxiliar em dúvidas sobre planos, configuração do serviço, problemas técnicos ou informações gerais sobre a plataforma. Priorizamos um atendimento claro, direto e de qualidade, buscando sempre a melhor experiência para nossos utilizadores. Você pode entrar em contacto através de WhatsApp ou email oficial, e nossa equipa responderá o mais rápido possível dentro do nosso horário de suporte, que funciona de forma contínua para garantir assistência sempre que necessário.</p>
+
+<a href="https://wa.me/258844744484?text=Olá%20suporte%20IPTV"
+class="contact-btn whatsapp-btn"
+target="_blank">
+📱 WhatsApp
+</a>
+
+</div>
+</div>
+
+<script>
+
+function abrirSobre(){ document.getElementById("sobreModal").style.display="flex"; }
+function fecharSobre(){ document.getElementById("sobreModal").style.display="none"; }
+
+function abrirPolitica(){ document.getElementById("privModal").style.display="flex"; }
+function fecharPolitica(){ document.getElementById("privModal").style.display="none"; }
+
+function abrirTermos(){ document.getElementById("termosModal").style.display="flex"; }
+function fecharTermos(){ document.getElementById("termosModal").style.display="none"; }
+
+function abrirContato(){ document.getElementById("contatoModal").style.display="flex"; }
+function fecharContato(){ document.getElementById("contatoModal").style.display="none"; }
+
+</script>
+
+</body>
+</html>
